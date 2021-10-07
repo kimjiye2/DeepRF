@@ -1,0 +1,15 @@
+[AINV|INFO] 2021-10-07 14:29:06,766 > [37mGradient ascent for env 'Inv-v1'[0m
+[AINV|ERROR] 2021-10-07 14:29:14,770 > [31mRuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 11.91 GiB total capacity; 11.15 GiB already allocated; 8.94 MiB free; 11.31 GiB reserved in total by PyTorch)[0m
+[AINV|DEBUG] 2021-10-07 14:29:14,770 > [36mTraceback (most recent call last):
+  File "../envs/refinement.py", line 221, in <module>
+    main(args)
+  File "../envs/refinement.py", line 91, in main
+    Mt, rews, done = env.step(b1_[..., t])
+  File "../envs/../envs/deeprf/environment.py", line 82, in step
+    Mt, done = self.core.step(m, phi)
+  File "../envs/../envs/deeprf/core.py", line 171, in step
+    Mt, done = self.simulator.step(B1, G.to(m))
+  File "../envs/../envs/simulator.py", line 89, in step
+    rot_mat[..., 2, 0] = -2 * ar * br + 2 * ai * bi
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 11.91 GiB total capacity; 11.15 GiB already allocated; 8.94 MiB free; 11.31 GiB reserved in total by PyTorch)
+[0m

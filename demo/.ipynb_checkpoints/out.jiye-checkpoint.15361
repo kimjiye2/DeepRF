@@ -1,0 +1,11 @@
+[AINV|INFO] 2021-09-30 14:52:36,353 > [37mGradient ascent for env 'Exc-v2'[0m
+[AINV|ERROR] 2021-09-30 14:52:40,696 > [31mRuntimeError: The size of tensor a (101) must match the size of tensor b (32) at non-singleton dimension 0[0m
+[AINV|DEBUG] 2021-09-30 14:52:40,697 > [36mTraceback (most recent call last):
+  File "../envs/refinement.py", line 221, in <module>
+    main(args)
+  File "../envs/refinement.py", line 91, in main
+    Mt, rews, done = env.step(b1_[..., t])
+  File "../envs/../envs/deeprf/environment.py", line 43, in step
+    error = torch.mean((Mx - refer_Mx).square(),dim=1) + torch.mean((My-refer_My).square(),dim=1)
+RuntimeError: The size of tensor a (101) must match the size of tensor b (32) at non-singleton dimension 0
+[0m

@@ -1,0 +1,300 @@
+time is <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2021-09-29 20:53:29.786317
+WARNING:tensorflow:From ../envs/generation.py:68: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+WARNING:tensorflow:From ../envs/generation.py:69: The name tf.random.set_random_seed is deprecated. Please use tf.compat.v1.random.set_random_seed instead.
+
+WARNING:tensorflow:From ../envs/generation.py:87: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From ../envs/generation.py:93: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+WARNING:tensorflow:From ../envs/generation.py:93: GRUCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.GRUCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From ../envs/generation.py:94: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:559: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:565: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:575: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From ../envs/generation.py:82: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From ../envs/generation.py:108: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING:tensorflow:From ../envs/generation.py:120: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From ../envs/generation.py:130: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+WARNING:tensorflow:From ../envs/generation.py:131: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1424: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:281: setdiff1d (from tensorflow.python.ops.array_ops) is deprecated and will be removed after 2018-11-30.
+Instructions for updating:
+This op will be removed after the deprecation date. Please switch to tf.sets.difference().
+WARNING:tensorflow:From ../envs/generation.py:139: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING:tensorflow:From ../envs/generation.py:164: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-09-29 20:54:01.767985: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-09-29 20:54:01.771958: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.911
+pciBusID: 0000:19:00.0
+2021-09-29 20:54:01.773361: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.0'; dlerror: libcudart.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-29 20:54:01.773825: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10.0'; dlerror: libcublas.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-29 20:54:01.774013: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcufft.so.10.0'; dlerror: libcufft.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-29 20:54:01.774212: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcurand.so.10.0'; dlerror: libcurand.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-29 20:54:01.774373: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcusolver.so.10.0'; dlerror: libcusolver.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-29 20:54:01.774535: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcusparse.so.10.0'; dlerror: libcusparse.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-29 20:54:01.804354: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-09-29 20:54:01.804757: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-09-29 20:54:01.807539: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-09-29 20:54:01.837812: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3800000000 Hz
+2021-09-29 20:54:01.839099: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555843a500a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-09-29 20:54:01.839244: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-09-29 20:54:01.852705: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555843a52a40 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-09-29 20:54:01.853067: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): TITAN Xp, Compute Capability 6.1
+2021-09-29 20:54:01.854372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-09-29 20:54:01.854396: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      
+WARNING:tensorflow:From ../envs/generation.py:165: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+  -----------------------
+  | Rew/Mean | -0.0851  |
+  | SAR/Mean | 0.0488   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00223  |
+  | Rew/Best | -0.0794  |
+  | SAR/Best | 0.0632   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00203  |
+  | Time     | 21       |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0835  |
+  | SAR/Mean | 0.0479   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00212  |
+  | Rew/Best | -0.0783  |
+  | SAR/Best | 0.0383   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00199  |
+  | Time     | 37.8     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0812  |
+  | SAR/Mean | 0.0469   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00163  |
+  | Rew/Best | -0.0747  |
+  | SAR/Best | 0.0852   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00399  |
+  | Time     | 52.2     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0798  |
+  | SAR/Mean | 0.0471   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00185  |
+  | Rew/Best | -0.0742  |
+  | SAR/Best | 0.0753   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00402  |
+  | Time     | 71.2     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0789  |
+  | SAR/Mean | 0.0486   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00193  |
+  | Rew/Best | -0.073   |
+  | SAR/Best | 0.0642   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00439  |
+  | Time     | 89.6     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0783  |
+  | SAR/Mean | 0.0465   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00167  |
+  | Rew/Best | -0.0677  |
+  | SAR/Best | 0.0751   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00157  |
+  | Time     | 108      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0793  |
+  | SAR/Mean | 0.0489   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00192  |
+  | Rew/Best | -0.073   |
+  | SAR/Best | 0.0709   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00334  |
+  | Time     | 131      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0795  |
+  | SAR/Mean | 0.0475   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.0018   |
+  | Rew/Best | -0.0754  |
+  | SAR/Best | 0.0479   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00201  |
+  | Time     | 145      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0803  |
+  | SAR/Mean | 0.0483   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00183  |
+  | Rew/Best | -0.0748  |
+  | SAR/Best | 0.0584   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00161  |
+  | Time     | 159      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0817  |
+  | SAR/Mean | 0.0495   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00173  |
+  | Rew/Best | -0.0759  |
+  | SAR/Best | 0.0725   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00192  |
+  | Time     | 176      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0824  |
+  | SAR/Mean | 0.0489   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00184  |
+  | Rew/Best | -0.0786  |
+  | SAR/Best | 0.0437   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00176  |
+  | Time     | 195      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0827  |
+  | SAR/Mean | 0.0438   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00171  |
+  | Rew/Best | -0.0785  |
+  | SAR/Best | 0.0426   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00284  |
+  | Time     | 216      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0836  |
+  | SAR/Mean | 0.0469   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00164  |
+  | Rew/Best | -0.08    |
+  | SAR/Best | 0.0729   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00243  |
+  | Time     | 229      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0834  |
+  | SAR/Mean | 0.0502   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00185  |
+  | Rew/Best | -0.0787  |
+  | SAR/Best | 0.0514   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00183  |
+  | Time     | 244      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0841  |
+  | SAR/Mean | 0.0466   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00169  |
+  | Rew/Best | -0.0805  |
+  | SAR/Best | 0.0422   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00118  |
+  | Time     | 259      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0844  |
+  | SAR/Mean | 0.05     |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00186  |
+  | Rew/Best | -0.08    |
+  | SAR/Best | 0.0411   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00136  |
+  | Time     | 274      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0854  |
+  | SAR/Mean | 0.0505   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00176  |
+  | Rew/Best | -0.0787  |
+  | SAR/Best | 0.0614   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00228  |
+  | Time     | 292      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0864  |
+  | SAR/Mean | 0.0593   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00219  |
+  | Rew/Best | -0.0807  |
+  | SAR/Best | 0.0501   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00124  |
+  | Time     | 308      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0867  |
+  | SAR/Mean | 0.056    |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00215  |
+  | Rew/Best | -0.081   |
+  | SAR/Best | 0.0778   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00355  |
+  | Time     | 326      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0877  |
+  | SAR/Mean | 0.0556   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00177  |
+  | Rew/Best | -0.0813  |
+  | SAR/Best | 0.0711   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.0026   |
+  | Time     | 344      |
+  -----------------------

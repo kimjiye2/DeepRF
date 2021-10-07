@@ -1,0 +1,3 @@
+[AINV|INFO] 2021-09-30 15:21:44,508 > [37mGradient ascent for env 'Exc-v2'[0m
+[AINV|INFO] 2021-09-30 15:23:33,897 > [37mSummary statistics for episode 50[0m
+slurmstepd: error: *** JOB 15362 ON n11 CANCELLED AT 2021-09-30T15:23:50 ***

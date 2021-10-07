@@ -2,9 +2,9 @@
 
 
 
-#SBATCH -J rnn_inv_v0
+#SBATCH -J rnn_inv_v1
 #SBATCH -o out.jiye.%j
-#SBATCH -p gpu14
+#SBATCH -p gpu11
 #SBATCH -t 11-00:00:00
 #SBATCH -N 1
 
@@ -16,7 +16,7 @@ for i in {1..17}
 do
   python time.py;
 
-  /home/jiye/.conda/envs/jiyekim/bin/python -u ../envs/generation.py --tag "rnn_inv_origin" --env "Inv-v0" --seed $RANDOM --gpu "3"
+  /home/jiye/.conda/envs/jiyekim/bin/python -u ../envs/generation.py --tag "rnn_inv_OC" --env "Inv-v1" --seed $RANDOM --gpu "1"
   python time.py
 
 

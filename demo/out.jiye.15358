@@ -1,0 +1,3596 @@
+time is <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2021-09-30 14:36:45.843847
+WARNING:tensorflow:From ../envs/generation.py:68: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+WARNING:tensorflow:From ../envs/generation.py:69: The name tf.random.set_random_seed is deprecated. Please use tf.compat.v1.random.set_random_seed instead.
+
+WARNING:tensorflow:From ../envs/generation.py:87: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From ../envs/generation.py:93: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+WARNING:tensorflow:From ../envs/generation.py:93: GRUCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.GRUCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From ../envs/generation.py:94: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:559: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:565: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:575: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From ../envs/generation.py:82: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From ../envs/generation.py:108: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING:tensorflow:From ../envs/generation.py:120: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From ../envs/generation.py:130: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+WARNING:tensorflow:From ../envs/generation.py:131: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1424: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:281: setdiff1d (from tensorflow.python.ops.array_ops) is deprecated and will be removed after 2018-11-30.
+Instructions for updating:
+This op will be removed after the deprecation date. Please switch to tf.sets.difference().
+WARNING:tensorflow:From ../envs/generation.py:139: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING:tensorflow:From ../envs/generation.py:164: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-09-30 14:37:12.350113: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-09-30 14:37:12.354008: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.911
+pciBusID: 0000:68:00.0
+2021-09-30 14:37:12.355260: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.0'; dlerror: libcudart.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 14:37:12.355476: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10.0'; dlerror: libcublas.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 14:37:12.355593: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcufft.so.10.0'; dlerror: libcufft.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 14:37:12.355690: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcurand.so.10.0'; dlerror: libcurand.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 14:37:12.355803: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcusolver.so.10.0'; dlerror: libcusolver.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 14:37:12.355920: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcusparse.so.10.0'; dlerror: libcusparse.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 14:37:12.381074: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-09-30 14:37:12.381621: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-09-30 14:37:12.384725: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-09-30 14:37:12.412965: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3800000000 Hz
+2021-09-30 14:37:12.414529: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f605544630 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-09-30 14:37:12.414616: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-09-30 14:37:12.428998: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f605546fd0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-09-30 14:37:12.429403: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): TITAN Xp, Compute Capability 6.1
+2021-09-30 14:37:12.430355: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-09-30 14:37:12.430369: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      
+WARNING:tensorflow:From ../envs/generation.py:165: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+  -----------------------
+  | Rew/Mean | -0.0804  |
+  | SAR/Mean | 0.0684   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.0029   |
+  | Rew/Best | -0.0736  |
+  | SAR/Best | 0.0762   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00262  |
+  | Time     | 14.6     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0801  |
+  | SAR/Mean | 0.0656   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00314  |
+  | Rew/Best | -0.0727  |
+  | SAR/Best | 0.0799   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00299  |
+  | Time     | 25.8     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0793  |
+  | SAR/Mean | 0.0731   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00298  |
+  | Rew/Best | -0.0735  |
+  | SAR/Best | 0.0782   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.0018   |
+  | Time     | 37.1     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.08    |
+  | SAR/Mean | 0.0624   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00253  |
+  | Rew/Best | -0.0759  |
+  | SAR/Best | 0.0544   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00196  |
+  | Time     | 49       |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0796  |
+  | SAR/Mean | 0.062    |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00298  |
+  | Rew/Best | -0.0735  |
+  | SAR/Best | 0.0617   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00247  |
+  | Time     | 58.8     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0789  |
+  | SAR/Mean | 0.0626   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00249  |
+  | Rew/Best | -0.0736  |
+  | SAR/Best | 0.0761   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00315  |
+  | Time     | 70.8     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0799  |
+  | SAR/Mean | 0.0615   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00257  |
+  | Rew/Best | -0.0748  |
+  | SAR/Best | 0.0583   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00166  |
+  | Time     | 83.4     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0806  |
+  | SAR/Mean | 0.0619   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00266  |
+  | Rew/Best | -0.0741  |
+  | SAR/Best | 0.0779   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00186  |
+  | Time     | 95.4     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0802  |
+  | SAR/Mean | 0.0642   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.0028   |
+  | Rew/Best | -0.0743  |
+  | SAR/Best | 0.0432   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.0022   |
+  | Time     | 108      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0802  |
+  | SAR/Mean | 0.0501   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00235  |
+  | Rew/Best | -0.0747  |
+  | SAR/Best | 0.035    |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.000871 |
+  | Time     | 117      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0815  |
+  | SAR/Mean | 0.0775   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00316  |
+  | Rew/Best | -0.0763  |
+  | SAR/Best | 0.0785   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00486  |
+  | Time     | 127      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0828  |
+  | SAR/Mean | 0.0768   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.003    |
+  | Rew/Best | -0.0744  |
+  | SAR/Best | 0.0664   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00256  |
+  | Time     | 140      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0931  |
+  | SAR/Mean | 0.0754   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00318  |
+  | Rew/Best | -0.0835  |
+  | SAR/Best | 0.0462   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00195  |
+  | Time     | 152      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0945  |
+  | SAR/Mean | 0.11     |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00354  |
+  | Rew/Best | -0.0774  |
+  | SAR/Best | 0.213    |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00371  |
+  | Time     | 161      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.079   |
+  | SAR/Mean | 0.144    |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00559  |
+  | Rew/Best | -0.0616  |
+  | SAR/Best | 0.236    |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00558  |
+  | Time     | 171      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0792  |
+  | SAR/Mean | 0.278    |
+  | Mz1/Mean | 1.99     |
+  | Mz2/Mean | 0.0114   |
+  | Rew/Best | -0.0547  |
+  | SAR/Best | 0.259    |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.00913  |
+  | Time     | 183      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.13    |
+  | SAR/Mean | 0.516    |
+  | Mz1/Mean | 1.99     |
+  | Mz2/Mean | 0.0188   |
+  | Rew/Best | -0.0663  |
+  | SAR/Best | 0.132    |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.0118   |
+  | Time     | 196      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.146   |
+  | SAR/Mean | 0.682    |
+  | Mz1/Mean | 1.98     |
+  | Mz2/Mean | 0.029    |
+  | Rew/Best | -0.0721  |
+  | SAR/Best | 0.0832   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00464  |
+  | Time     | 207      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.15    |
+  | SAR/Mean | 1.06     |
+  | Mz1/Mean | 1.98     |
+  | Mz2/Mean | 0.0327   |
+  | Rew/Best | -0.118   |
+  | SAR/Best | 0.747    |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.0288   |
+  | Time     | 219      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.144   |
+  | SAR/Mean | 1.23     |
+  | Mz1/Mean | 1.98     |
+  | Mz2/Mean | 0.0382   |
+  | Rew/Best | -0.0926  |
+  | SAR/Best | 1.28     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.0596   |
+  | Time     | 231      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.119   |
+  | SAR/Mean | 1.55     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.0412   |
+  | Rew/Best | -0.0603  |
+  | SAR/Best | 2        |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.0512   |
+  | Time     | 239      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0823  |
+  | SAR/Mean | 2.08     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.048    |
+  | Rew/Best | -0.0465  |
+  | SAR/Best | 2.72     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.0503   |
+  | Time     | 249      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0572  |
+  | SAR/Mean | 3.04     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.0551   |
+  | Rew/Best | -0.0333  |
+  | SAR/Best | 2.79     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.0809   |
+  | Time     | 260      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0556  |
+  | SAR/Mean | 3.09     |
+  | Mz1/Mean | 1.95     |
+  | Mz2/Mean | 0.0627   |
+  | Rew/Best | -0.0292  |
+  | SAR/Best | 1.85     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.0333   |
+  | Time     | 269      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0576  |
+  | SAR/Mean | 3.15     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.0585   |
+  | Rew/Best | -0.0285  |
+  | SAR/Best | 1.84     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.0693   |
+  | Time     | 278      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0577  |
+  | SAR/Mean | 3.2      |
+  | Mz1/Mean | 1.95     |
+  | Mz2/Mean | 0.0647   |
+  | Rew/Best | -0.0418  |
+  | SAR/Best | 2.66     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.0777   |
+  | Time     | 291      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0569  |
+  | SAR/Mean | 3.25     |
+  | Mz1/Mean | 1.95     |
+  | Mz2/Mean | 0.0666   |
+  | Rew/Best | -0.0273  |
+  | SAR/Best | 2.49     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.0344   |
+  | Time     | 300      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0643  |
+  | SAR/Mean | 3.4      |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.062    |
+  | Rew/Best | -0.0323  |
+  | SAR/Best | 2.62     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.0559   |
+  | Time     | 308      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0631  |
+  | SAR/Mean | 3.62     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.0622   |
+  | Rew/Best | -0.0322  |
+  | SAR/Best | 2.69     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.0431   |
+  | Time     | 320      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0536  |
+  | SAR/Mean | 3.51     |
+  | Mz1/Mean | 1.95     |
+  | Mz2/Mean | 0.0587   |
+  | Rew/Best | -0.0243  |
+  | SAR/Best | 2.23     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.0414   |
+  | Time     | 330      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0607  |
+  | SAR/Mean | 3.32     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.0614   |
+  | Rew/Best | -0.0256  |
+  | SAR/Best | 1.9      |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.0632   |
+  | Time     | 341      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0638  |
+  | SAR/Mean | 3.77     |
+  | Mz1/Mean | 1.95     |
+  | Mz2/Mean | 0.0668   |
+  | Rew/Best | -0.0245  |
+  | SAR/Best | 2.06     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.0468   |
+  | Time     | 349      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0628  |
+  | SAR/Mean | 4.03     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.0658   |
+  | Rew/Best | -0.0276  |
+  | SAR/Best | 2.92     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.0528   |
+  | Time     | 360      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0678  |
+  | SAR/Mean | 4.13     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.0664   |
+  | Rew/Best | -0.0203  |
+  | SAR/Best | 2.53     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.058    |
+  | Time     | 369      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0693  |
+  | SAR/Mean | 4.27     |
+  | Mz1/Mean | 1.95     |
+  | Mz2/Mean | 0.0678   |
+  | Rew/Best | -0.0208  |
+  | SAR/Best | 2.43     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.0439   |
+  | Time     | 382      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0734  |
+  | SAR/Mean | 4.52     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.0684   |
+  | Rew/Best | -0.0236  |
+  | SAR/Best | 2.31     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.0853   |
+  | Time     | 393      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0818  |
+  | SAR/Mean | 4.89     |
+  | Mz1/Mean | 1.95     |
+  | Mz2/Mean | 0.0796   |
+  | Rew/Best | -0.0184  |
+  | SAR/Best | 2.15     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.0384   |
+  | Time     | 404      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0776  |
+  | SAR/Mean | 4.91     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.0669   |
+  | Rew/Best | -0.0256  |
+  | SAR/Best | 2.35     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.08     |
+  | Time     | 415      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0848  |
+  | SAR/Mean | 5.02     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.0664   |
+  | Rew/Best | -0.0347  |
+  | SAR/Best | 4.02     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.0742   |
+  | Time     | 427      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0849  |
+  | SAR/Mean | 5.39     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.0778   |
+  | Rew/Best | -0.0223  |
+  | SAR/Best | 3.28     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.0477   |
+  | Time     | 437      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0916  |
+  | SAR/Mean | 5.42     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.0691   |
+  | Rew/Best | -0.0306  |
+  | SAR/Best | 3.5      |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.0549   |
+  | Time     | 447      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0931  |
+  | SAR/Mean | 5.57     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.0797   |
+  | Rew/Best | -0.0361  |
+  | SAR/Best | 4.07     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.0847   |
+  | Time     | 456      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.103   |
+  | SAR/Mean | 5.75     |
+  | Mz1/Mean | 1.98     |
+  | Mz2/Mean | 0.0694   |
+  | Rew/Best | -0.0299  |
+  | SAR/Best | 4.2      |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.0465   |
+  | Time     | 465      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.112   |
+  | SAR/Mean | 6.27     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.0795   |
+  | Rew/Best | -0.0194  |
+  | SAR/Best | 3.26     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.0537   |
+  | Time     | 476      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.106   |
+  | SAR/Mean | 6.33     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.0743   |
+  | Rew/Best | -0.017   |
+  | SAR/Best | 3.41     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.0498   |
+  | Time     | 488      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.125   |
+  | SAR/Mean | 7.11     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.0884   |
+  | Rew/Best | -0.021   |
+  | SAR/Best | 3.35     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.046    |
+  | Time     | 499      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.113   |
+  | SAR/Mean | 6.57     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.0758   |
+  | Rew/Best | -0.0293  |
+  | SAR/Best | 4.38     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.0792   |
+  | Time     | 511      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.126   |
+  | SAR/Mean | 6.95     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.0832   |
+  | Rew/Best | -0.0127  |
+  | SAR/Best | 3.26     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.0271   |
+  | Time     | 520      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.131   |
+  | SAR/Mean | 7.25     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.0857   |
+  | Rew/Best | -0.0396  |
+  | SAR/Best | 1.15     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.0666   |
+  | Time     | 533      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.136   |
+  | SAR/Mean | 7.66     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.0877   |
+  | Rew/Best | -0.0194  |
+  | SAR/Best | 4.24     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.0889   |
+  | Time     | 541      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.129   |
+  | SAR/Mean | 7.47     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.0922   |
+  | Rew/Best | -0.0468  |
+  | SAR/Best | 4.25     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.0837   |
+  | Time     | 551      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.149   |
+  | SAR/Mean | 8.16     |
+  | Mz1/Mean | 1.98     |
+  | Mz2/Mean | 0.0844   |
+  | Rew/Best | -0.0569  |
+  | SAR/Best | 6.24     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.0597   |
+  | Time     | 562      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.156   |
+  | SAR/Mean | 8.44     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.0842   |
+  | Rew/Best | -0.05    |
+  | SAR/Best | 4.98     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.0692   |
+  | Time     | 572      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.166   |
+  | SAR/Mean | 9.08     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.102    |
+  | Rew/Best | -0.0915  |
+  | SAR/Best | 5.29     |
+  | Mz1/Best | 1.87     |
+  | Mz2/Best | 0.151    |
+  | Time     | 585      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.162   |
+  | SAR/Mean | 9.32     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.103    |
+  | Rew/Best | -0.0791  |
+  | SAR/Best | 6.9      |
+  | Mz1/Best | 1.86     |
+  | Mz2/Best | 0.186    |
+  | Time     | 596      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.179   |
+  | SAR/Mean | 10.4     |
+  | Mz1/Mean | 1.98     |
+  | Mz2/Mean | 0.102    |
+  | Rew/Best | -0.122   |
+  | SAR/Best | 8.38     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.0897   |
+  | Time     | 607      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.179   |
+  | SAR/Mean | 10.8     |
+  | Mz1/Mean | 1.98     |
+  | Mz2/Mean | 0.105    |
+  | Rew/Best | -0.0321  |
+  | SAR/Best | 4.79     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.0538   |
+  | Time     | 621      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.179   |
+  | SAR/Mean | 10.5     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.101    |
+  | Rew/Best | -0.0748  |
+  | SAR/Best | 6.75     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.0733   |
+  | Time     | 631      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.168   |
+  | SAR/Mean | 10.5     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.116    |
+  | Rew/Best | -0.0442  |
+  | SAR/Best | 6.68     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.0614   |
+  | Time     | 644      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.186   |
+  | SAR/Mean | 11.6     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.107    |
+  | Rew/Best | -0.0857  |
+  | SAR/Best | 6.9      |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.159    |
+  | Time     | 654      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.174   |
+  | SAR/Mean | 11.2     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.121    |
+  | Rew/Best | -0.0548  |
+  | SAR/Best | 7.68     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.128    |
+  | Time     | 662      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.188   |
+  | SAR/Mean | 11.8     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.12     |
+  | Rew/Best | -0.118   |
+  | SAR/Best | 8.34     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.168    |
+  | Time     | 673      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.186   |
+  | SAR/Mean | 12       |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.122    |
+  | Rew/Best | -0.0968  |
+  | SAR/Best | 9.02     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.169    |
+  | Time     | 684      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.187   |
+  | SAR/Mean | 12.5     |
+  | Mz1/Mean | 1.98     |
+  | Mz2/Mean | 0.117    |
+  | Rew/Best | -0.13    |
+  | SAR/Best | 9.69     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.12     |
+  | Time     | 694      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.181   |
+  | SAR/Mean | 12.8     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.135    |
+  | Rew/Best | -0.137   |
+  | SAR/Best | 10.1     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.121    |
+  | Time     | 706      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.181   |
+  | SAR/Mean | 13.8     |
+  | Mz1/Mean | 1.98     |
+  | Mz2/Mean | 0.126    |
+  | Rew/Best | -0.0973  |
+  | SAR/Best | 15.8     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.145    |
+  | Time     | 718      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.184   |
+  | SAR/Mean | 14.9     |
+  | Mz1/Mean | 1.97     |
+  | Mz2/Mean | 0.148    |
+  | Rew/Best | -0.131   |
+  | SAR/Best | 16.6     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.201    |
+  | Time     | 729      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.166   |
+  | SAR/Mean | 16.9     |
+  | Mz1/Mean | 1.96     |
+  | Mz2/Mean | 0.169    |
+  | Rew/Best | -0.0893  |
+  | SAR/Best | 8.37     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.127    |
+  | Time     | 741      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.146   |
+  | SAR/Mean | 25       |
+  | Mz1/Mean | 1.93     |
+  | Mz2/Mean | 0.272    |
+  | Rew/Best | -0.105   |
+  | SAR/Best | 26.2     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.253    |
+  | Time     | 753      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.152   |
+  | SAR/Mean | 30.7     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.3      |
+  | Rew/Best | -0.091   |
+  | SAR/Best | 24.8     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.15     |
+  | Time     | 763      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.152   |
+  | SAR/Mean | 30.1     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.317    |
+  | Rew/Best | -0.099   |
+  | SAR/Best | 25.1     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.169    |
+  | Time     | 773      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.167   |
+  | SAR/Mean | 31.9     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.322    |
+  | Rew/Best | -0.106   |
+  | SAR/Best | 24.4     |
+  | Mz1/Best | 1.89     |
+  | Mz2/Best | 0.246    |
+  | Time     | 786      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.156   |
+  | SAR/Mean | 32.9     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.348    |
+  | Rew/Best | -0.0976  |
+  | SAR/Best | 25.6     |
+  | Mz1/Best | 1.83     |
+  | Mz2/Best | 0.243    |
+  | Time     | 797      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.173   |
+  | SAR/Mean | 33.6     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.337    |
+  | Rew/Best | -0.106   |
+  | SAR/Best | 29.8     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.298    |
+  | Time     | 809      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.212   |
+  | SAR/Mean | 38.3     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.403    |
+  | Rew/Best | -0.134   |
+  | SAR/Best | 29.5     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.176    |
+  | Time     | 824      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.208   |
+  | SAR/Mean | 36.3     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.394    |
+  | Rew/Best | -0.117   |
+  | SAR/Best | 29.3     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.266    |
+  | Time     | 836      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.231   |
+  | SAR/Mean | 40.9     |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.409    |
+  | Rew/Best | -0.154   |
+  | SAR/Best | 31.3     |
+  | Mz1/Best | 1.82     |
+  | Mz2/Best | 0.367    |
+  | Time     | 848      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.237   |
+  | SAR/Mean | 42.9     |
+  | Mz1/Mean | 1.84     |
+  | Mz2/Mean | 0.439    |
+  | Rew/Best | -0.148   |
+  | SAR/Best | 32.2     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.201    |
+  | Time     | 862      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.262   |
+  | SAR/Mean | 44.4     |
+  | Mz1/Mean | 1.81     |
+  | Mz2/Mean | 0.442    |
+  | Rew/Best | -0.179   |
+  | SAR/Best | 37.8     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.261    |
+  | Time     | 875      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.253   |
+  | SAR/Mean | 45.3     |
+  | Mz1/Mean | 1.77     |
+  | Mz2/Mean | 0.498    |
+  | Rew/Best | -0.15    |
+  | SAR/Best | 32       |
+  | Mz1/Best | 1.69     |
+  | Mz2/Best | 0.8      |
+  | Time     | 886      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.264   |
+  | SAR/Mean | 51.2     |
+  | Mz1/Mean | 1.8      |
+  | Mz2/Mean | 0.473    |
+  | Rew/Best | -0.196   |
+  | SAR/Best | 67.7     |
+  | Mz1/Best | 1.67     |
+  | Mz2/Best | 0.52     |
+  | Time     | 898      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.262   |
+  | SAR/Mean | 47.4     |
+  | Mz1/Mean | 1.82     |
+  | Mz2/Mean | 0.496    |
+  | Rew/Best | -0.161   |
+  | SAR/Best | 33.6     |
+  | Mz1/Best | 1.6      |
+  | Mz2/Best | 0.54     |
+  | Time     | 912      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.245   |
+  | SAR/Mean | 42.1     |
+  | Mz1/Mean | 1.83     |
+  | Mz2/Mean | 0.403    |
+  | Rew/Best | -0.129   |
+  | SAR/Best | 30.8     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.151    |
+  | Time     | 923      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.23    |
+  | SAR/Mean | 40.6     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.375    |
+  | Rew/Best | -0.135   |
+  | SAR/Best | 34.5     |
+  | Mz1/Best | 1.89     |
+  | Mz2/Best | 0.279    |
+  | Time     | 935      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.235   |
+  | SAR/Mean | 41.4     |
+  | Mz1/Mean | 1.84     |
+  | Mz2/Mean | 0.452    |
+  | Rew/Best | -0.134   |
+  | SAR/Best | 27.9     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.205    |
+  | Time     | 947      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.263   |
+  | SAR/Mean | 44.7     |
+  | Mz1/Mean | 1.82     |
+  | Mz2/Mean | 0.456    |
+  | Rew/Best | -0.158   |
+  | SAR/Best | 32.2     |
+  | Mz1/Best | 1.65     |
+  | Mz2/Best | 0.365    |
+  | Time     | 957      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.259   |
+  | SAR/Mean | 46       |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.434    |
+  | Rew/Best | -0.156   |
+  | SAR/Best | 32.1     |
+  | Mz1/Best | 1.58     |
+  | Mz2/Best | 0.518    |
+  | Time     | 967      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.265   |
+  | SAR/Mean | 48.6     |
+  | Mz1/Mean | 1.84     |
+  | Mz2/Mean | 0.478    |
+  | Rew/Best | -0.194   |
+  | SAR/Best | 38.5     |
+  | Mz1/Best | 1.83     |
+  | Mz2/Best | 0.362    |
+  | Time     | 979      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.254   |
+  | SAR/Mean | 46.6     |
+  | Mz1/Mean | 1.81     |
+  | Mz2/Mean | 0.444    |
+  | Rew/Best | -0.135   |
+  | SAR/Best | 31.4     |
+  | Mz1/Best | 1.74     |
+  | Mz2/Best | 0.257    |
+  | Time     | 989      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.276   |
+  | SAR/Mean | 52.6     |
+  | Mz1/Mean | 1.8      |
+  | Mz2/Mean | 0.526    |
+  | Rew/Best | -0.204   |
+  | SAR/Best | 40.2     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.421    |
+  | Time     | 999      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.273   |
+  | SAR/Mean | 49.9     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.489    |
+  | Rew/Best | -0.18    |
+  | SAR/Best | 38.8     |
+  | Mz1/Best | 1.8      |
+  | Mz2/Best | 0.269    |
+  | Time     | 1.01e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.271   |
+  | SAR/Mean | 52.2     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.498    |
+  | Rew/Best | -0.218   |
+  | SAR/Best | 44.6     |
+  | Mz1/Best | 1.91     |
+  | Mz2/Best | 0.688    |
+  | Time     | 1.03e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.262   |
+  | SAR/Mean | 47       |
+  | Mz1/Mean | 1.81     |
+  | Mz2/Mean | 0.449    |
+  | Rew/Best | -0.137   |
+  | SAR/Best | 29.7     |
+  | Mz1/Best | 1.72     |
+  | Mz2/Best | 0.281    |
+  | Time     | 1.04e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.272   |
+  | SAR/Mean | 54       |
+  | Mz1/Mean | 1.78     |
+  | Mz2/Mean | 0.529    |
+  | Rew/Best | -0.212   |
+  | SAR/Best | 57.9     |
+  | Mz1/Best | 1.81     |
+  | Mz2/Best | 0.516    |
+  | Time     | 1.05e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.228   |
+  | SAR/Mean | 41.3     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.431    |
+  | Rew/Best | -0.131   |
+  | SAR/Best | 27.5     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.229    |
+  | Time     | 1.06e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.224   |
+  | SAR/Mean | 40.7     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.427    |
+  | Rew/Best | -0.14    |
+  | SAR/Best | 28       |
+  | Mz1/Best | 1.68     |
+  | Mz2/Best | 0.321    |
+  | Time     | 1.07e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.226   |
+  | SAR/Mean | 41.9     |
+  | Mz1/Mean | 1.84     |
+  | Mz2/Mean | 0.461    |
+  | Rew/Best | -0.122   |
+  | SAR/Best | 35.5     |
+  | Mz1/Best | 1.91     |
+  | Mz2/Best | 0.35     |
+  | Time     | 1.08e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.231   |
+  | SAR/Mean | 42.9     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.457    |
+  | Rew/Best | -0.134   |
+  | SAR/Best | 33.7     |
+  | Mz1/Best | 1.7      |
+  | Mz2/Best | 0.32     |
+  | Time     | 1.1e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.242   |
+  | SAR/Mean | 44.7     |
+  | Mz1/Mean | 1.77     |
+  | Mz2/Mean | 0.497    |
+  | Rew/Best | -0.138   |
+  | SAR/Best | 38.4     |
+  | Mz1/Best | 1.77     |
+  | Mz2/Best | 0.53     |
+  | Time     | 1.11e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.246   |
+  | SAR/Mean | 45.6     |
+  | Mz1/Mean | 1.83     |
+  | Mz2/Mean | 0.458    |
+  | Rew/Best | -0.145   |
+  | SAR/Best | 31.6     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.305    |
+  | Time     | 1.12e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.24    |
+  | SAR/Mean | 45.4     |
+  | Mz1/Mean | 1.81     |
+  | Mz2/Mean | 0.43     |
+  | Rew/Best | -0.143   |
+  | SAR/Best | 37.3     |
+  | Mz1/Best | 1.68     |
+  | Mz2/Best | 0.356    |
+  | Time     | 1.13e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.251   |
+  | SAR/Mean | 47.3     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.436    |
+  | Rew/Best | -0.137   |
+  | SAR/Best | 32.5     |
+  | Mz1/Best | 1.86     |
+  | Mz2/Best | 0.225    |
+  | Time     | 1.14e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.27    |
+  | SAR/Mean | 51.6     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.481    |
+  | Rew/Best | -0.202   |
+  | SAR/Best | 41.6     |
+  | Mz1/Best | 1.68     |
+  | Mz2/Best | 0.507    |
+  | Time     | 1.15e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.264   |
+  | SAR/Mean | 50.3     |
+  | Mz1/Mean | 1.82     |
+  | Mz2/Mean | 0.48     |
+  | Rew/Best | -0.169   |
+  | SAR/Best | 35.6     |
+  | Mz1/Best | 1.87     |
+  | Mz2/Best | 0.25     |
+  | Time     | 1.16e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.193   |
+  | SAR/Mean | 38.4     |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.382    |
+  | Rew/Best | -0.136   |
+  | SAR/Best | 36.4     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.251    |
+  | Time     | 1.18e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.176   |
+  | SAR/Mean | 33.6     |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.355    |
+  | Rew/Best | -0.148   |
+  | SAR/Best | 37.5     |
+  | Mz1/Best | 1.74     |
+  | Mz2/Best | 0.391    |
+  | Time     | 1.19e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.18    |
+  | SAR/Mean | 34.5     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.349    |
+  | Rew/Best | -0.139   |
+  | SAR/Best | 29.3     |
+  | Mz1/Best | 1.8      |
+  | Mz2/Best | 0.199    |
+  | Time     | 1.2e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.195   |
+  | SAR/Mean | 37.1     |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.359    |
+  | Rew/Best | -0.152   |
+  | SAR/Best | 34.6     |
+  | Mz1/Best | 1.8      |
+  | Mz2/Best | 0.326    |
+  | Time     | 1.21e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.203   |
+  | SAR/Mean | 40.4     |
+  | Mz1/Mean | 1.83     |
+  | Mz2/Mean | 0.424    |
+  | Rew/Best | -0.143   |
+  | SAR/Best | 34.3     |
+  | Mz1/Best | 1.72     |
+  | Mz2/Best | 0.369    |
+  | Time     | 1.22e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.236   |
+  | SAR/Mean | 44.7     |
+  | Mz1/Mean | 1.83     |
+  | Mz2/Mean | 0.476    |
+  | Rew/Best | -0.168   |
+  | SAR/Best | 38.7     |
+  | Mz1/Best | 1.85     |
+  | Mz2/Best | 0.469    |
+  | Time     | 1.24e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.23    |
+  | SAR/Mean | 44.6     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.491    |
+  | Rew/Best | -0.157   |
+  | SAR/Best | 37.9     |
+  | Mz1/Best | 1.8      |
+  | Mz2/Best | 0.453    |
+  | Time     | 1.25e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.282   |
+  | SAR/Mean | 58.6     |
+  | Mz1/Mean | 1.75     |
+  | Mz2/Mean | 0.568    |
+  | Rew/Best | -0.212   |
+  | SAR/Best | 49.4     |
+  | Mz1/Best | 1.65     |
+  | Mz2/Best | 0.534    |
+  | Time     | 1.26e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.215   |
+  | SAR/Mean | 43.2     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.465    |
+  | Rew/Best | -0.17    |
+  | SAR/Best | 38.6     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.486    |
+  | Time     | 1.27e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.208   |
+  | SAR/Mean | 42.1     |
+  | Mz1/Mean | 1.82     |
+  | Mz2/Mean | 0.403    |
+  | Rew/Best | -0.156   |
+  | SAR/Best | 33.6     |
+  | Mz1/Best | 1.91     |
+  | Mz2/Best | 0.215    |
+  | Time     | 1.28e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.241   |
+  | SAR/Mean | 47.2     |
+  | Mz1/Mean | 1.84     |
+  | Mz2/Mean | 0.473    |
+  | Rew/Best | -0.16    |
+  | SAR/Best | 40.6     |
+  | Mz1/Best | 1.76     |
+  | Mz2/Best | 0.369    |
+  | Time     | 1.29e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.245   |
+  | SAR/Mean | 48.3     |
+  | Mz1/Mean | 1.82     |
+  | Mz2/Mean | 0.477    |
+  | Rew/Best | -0.178   |
+  | SAR/Best | 32.6     |
+  | Mz1/Best | 1.71     |
+  | Mz2/Best | 0.38     |
+  | Time     | 1.3e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.253   |
+  | SAR/Mean | 52       |
+  | Mz1/Mean | 1.81     |
+  | Mz2/Mean | 0.467    |
+  | Rew/Best | -0.194   |
+  | SAR/Best | 45.3     |
+  | Mz1/Best | 1.89     |
+  | Mz2/Best | 0.402    |
+  | Time     | 1.31e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.237   |
+  | SAR/Mean | 49.3     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.482    |
+  | Rew/Best | -0.147   |
+  | SAR/Best | 47.3     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.492    |
+  | Time     | 1.33e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.206   |
+  | SAR/Mean | 42.9     |
+  | Mz1/Mean | 1.83     |
+  | Mz2/Mean | 0.409    |
+  | Rew/Best | -0.13    |
+  | SAR/Best | 34.7     |
+  | Mz1/Best | 1.83     |
+  | Mz2/Best | 0.311    |
+  | Time     | 1.34e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.22    |
+  | SAR/Mean | 45.6     |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.49     |
+  | Rew/Best | -0.16    |
+  | SAR/Best | 41.8     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.334    |
+  | Time     | 1.35e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.221   |
+  | SAR/Mean | 47.2     |
+  | Mz1/Mean | 1.82     |
+  | Mz2/Mean | 0.411    |
+  | Rew/Best | -0.145   |
+  | SAR/Best | 41.3     |
+  | Mz1/Best | 1.91     |
+  | Mz2/Best | 0.243    |
+  | Time     | 1.37e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.227   |
+  | SAR/Mean | 47.9     |
+  | Mz1/Mean | 1.83     |
+  | Mz2/Mean | 0.487    |
+  | Rew/Best | -0.141   |
+  | SAR/Best | 38       |
+  | Mz1/Best | 1.9      |
+  | Mz2/Best | 0.406    |
+  | Time     | 1.38e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.242   |
+  | SAR/Mean | 53.2     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.48     |
+  | Rew/Best | -0.134   |
+  | SAR/Best | 41.6     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.328    |
+  | Time     | 1.39e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.259   |
+  | SAR/Mean | 53.3     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.518    |
+  | Rew/Best | -0.17    |
+  | SAR/Best | 46.4     |
+  | Mz1/Best | 1.91     |
+  | Mz2/Best | 0.233    |
+  | Time     | 1.4e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.249   |
+  | SAR/Mean | 52.4     |
+  | Mz1/Mean | 1.84     |
+  | Mz2/Mean | 0.509    |
+  | Rew/Best | -0.174   |
+  | SAR/Best | 42       |
+  | Mz1/Best | 1.34     |
+  | Mz2/Best | 0.752    |
+  | Time     | 1.42e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.225   |
+  | SAR/Mean | 48.4     |
+  | Mz1/Mean | 1.83     |
+  | Mz2/Mean | 0.436    |
+  | Rew/Best | -0.148   |
+  | SAR/Best | 36.8     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.338    |
+  | Time     | 1.43e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.237   |
+  | SAR/Mean | 50.8     |
+  | Mz1/Mean | 1.78     |
+  | Mz2/Mean | 0.47     |
+  | Rew/Best | -0.167   |
+  | SAR/Best | 39.2     |
+  | Mz1/Best | 1.8      |
+  | Mz2/Best | 0.517    |
+  | Time     | 1.44e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.242   |
+  | SAR/Mean | 51.9     |
+  | Mz1/Mean | 1.82     |
+  | Mz2/Mean | 0.478    |
+  | Rew/Best | -0.169   |
+  | SAR/Best | 45.4     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.322    |
+  | Time     | 1.45e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.174   |
+  | SAR/Mean | 39.7     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.362    |
+  | Rew/Best | -0.134   |
+  | SAR/Best | 35.4     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.676    |
+  | Time     | 1.46e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.177   |
+  | SAR/Mean | 41.8     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.39     |
+  | Rew/Best | -0.132   |
+  | SAR/Best | 39.9     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.446    |
+  | Time     | 1.47e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.185   |
+  | SAR/Mean | 40.9     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.412    |
+  | Rew/Best | -0.131   |
+  | SAR/Best | 36.8     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.292    |
+  | Time     | 1.48e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.178   |
+  | SAR/Mean | 40.8     |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.39     |
+  | Rew/Best | -0.128   |
+  | SAR/Best | 39       |
+  | Mz1/Best | 1.9      |
+  | Mz2/Best | 0.27     |
+  | Time     | 1.49e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.187   |
+  | SAR/Mean | 42.3     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.413    |
+  | Rew/Best | -0.149   |
+  | SAR/Best | 38.9     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.437    |
+  | Time     | 1.51e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.192   |
+  | SAR/Mean | 42.8     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.438    |
+  | Rew/Best | -0.139   |
+  | SAR/Best | 47.4     |
+  | Mz1/Best | 1.89     |
+  | Mz2/Best | 0.324    |
+  | Time     | 1.52e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.19    |
+  | SAR/Mean | 43.1     |
+  | Mz1/Mean | 1.84     |
+  | Mz2/Mean | 0.475    |
+  | Rew/Best | -0.115   |
+  | SAR/Best | 39.5     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.432    |
+  | Time     | 1.53e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.193   |
+  | SAR/Mean | 44.8     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.402    |
+  | Rew/Best | -0.14    |
+  | SAR/Best | 37.8     |
+  | Mz1/Best | 1.91     |
+  | Mz2/Best | 0.225    |
+  | Time     | 1.54e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.216   |
+  | SAR/Mean | 46.4     |
+  | Mz1/Mean | 1.82     |
+  | Mz2/Mean | 0.409    |
+  | Rew/Best | -0.119   |
+  | SAR/Best | 39.9     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.186    |
+  | Time     | 1.55e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.213   |
+  | SAR/Mean | 47.7     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.435    |
+  | Rew/Best | -0.147   |
+  | SAR/Best | 44.1     |
+  | Mz1/Best | 1.76     |
+  | Mz2/Best | 0.259    |
+  | Time     | 1.57e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.222   |
+  | SAR/Mean | 49.6     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.398    |
+  | Rew/Best | -0.155   |
+  | SAR/Best | 48.1     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.396    |
+  | Time     | 1.58e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.234   |
+  | SAR/Mean | 51.4     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.474    |
+  | Rew/Best | -0.157   |
+  | SAR/Best | 43.3     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.552    |
+  | Time     | 1.59e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.204   |
+  | SAR/Mean | 46.9     |
+  | Mz1/Mean | 1.83     |
+  | Mz2/Mean | 0.457    |
+  | Rew/Best | -0.142   |
+  | SAR/Best | 41       |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.276    |
+  | Time     | 1.6e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.218   |
+  | SAR/Mean | 50.5     |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.423    |
+  | Rew/Best | -0.124   |
+  | SAR/Best | 48.4     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.328    |
+  | Time     | 1.62e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.227   |
+  | SAR/Mean | 50.7     |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.515    |
+  | Rew/Best | -0.152   |
+  | SAR/Best | 40.1     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.664    |
+  | Time     | 1.63e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.22    |
+  | SAR/Mean | 49.5     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.417    |
+  | Rew/Best | -0.15    |
+  | SAR/Best | 39.8     |
+  | Mz1/Best | 1.87     |
+  | Mz2/Best | 0.288    |
+  | Time     | 1.64e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.207   |
+  | SAR/Mean | 48.8     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.436    |
+  | Rew/Best | -0.142   |
+  | SAR/Best | 42       |
+  | Mz1/Best | 1.8      |
+  | Mz2/Best | 0.356    |
+  | Time     | 1.66e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.212   |
+  | SAR/Mean | 50.3     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.448    |
+  | Rew/Best | -0.131   |
+  | SAR/Best | 41.2     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.314    |
+  | Time     | 1.67e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.217   |
+  | SAR/Mean | 49.4     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.407    |
+  | Rew/Best | -0.134   |
+  | SAR/Best | 43.9     |
+  | Mz1/Best | 1.83     |
+  | Mz2/Best | 0.257    |
+  | Time     | 1.69e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.225   |
+  | SAR/Mean | 51.4     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.473    |
+  | Rew/Best | -0.15    |
+  | SAR/Best | 44.4     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.539    |
+  | Time     | 1.7e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.236   |
+  | SAR/Mean | 55.1     |
+  | Mz1/Mean | 1.82     |
+  | Mz2/Mean | 0.517    |
+  | Rew/Best | -0.161   |
+  | SAR/Best | 42.3     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.295    |
+  | Time     | 1.71e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.177   |
+  | SAR/Mean | 34.6     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.384    |
+  | Rew/Best | -0.103   |
+  | SAR/Best | 42.1     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.138    |
+  | Time     | 1.73e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.167   |
+  | SAR/Mean | 35       |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.376    |
+  | Rew/Best | -0.123   |
+  | SAR/Best | 36       |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.292    |
+  | Time     | 1.74e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.158   |
+  | SAR/Mean | 37.3     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.306    |
+  | Rew/Best | -0.122   |
+  | SAR/Best | 35.6     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.227    |
+  | Time     | 1.75e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.163   |
+  | SAR/Mean | 36.6     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.352    |
+  | Rew/Best | -0.124   |
+  | SAR/Best | 40.2     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.41     |
+  | Time     | 1.77e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.167   |
+  | SAR/Mean | 40.2     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.372    |
+  | Rew/Best | -0.117   |
+  | SAR/Best | 39.8     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.44     |
+  | Time     | 1.78e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.202   |
+  | SAR/Mean | 52.6     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.462    |
+  | Rew/Best | -0.129   |
+  | SAR/Best | 46.8     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.202    |
+  | Time     | 1.79e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.189   |
+  | SAR/Mean | 50.2     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.393    |
+  | Rew/Best | -0.118   |
+  | SAR/Best | 45.4     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.24     |
+  | Time     | 1.8e+03  |
+  -----------------------
+time is <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2021-09-30 15:07:26.167834
+time is <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2021-09-30 15:07:26.220309
+WARNING:tensorflow:From ../envs/generation.py:68: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+WARNING:tensorflow:From ../envs/generation.py:69: The name tf.random.set_random_seed is deprecated. Please use tf.compat.v1.random.set_random_seed instead.
+
+WARNING:tensorflow:From ../envs/generation.py:87: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From ../envs/generation.py:93: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+WARNING:tensorflow:From ../envs/generation.py:93: GRUCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.GRUCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From ../envs/generation.py:94: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:559: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:565: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:575: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From ../envs/generation.py:82: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From ../envs/generation.py:108: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING:tensorflow:From ../envs/generation.py:120: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From ../envs/generation.py:130: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+WARNING:tensorflow:From ../envs/generation.py:131: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1424: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/jiye/.conda/envs/jiyekim/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:281: setdiff1d (from tensorflow.python.ops.array_ops) is deprecated and will be removed after 2018-11-30.
+Instructions for updating:
+This op will be removed after the deprecation date. Please switch to tf.sets.difference().
+WARNING:tensorflow:From ../envs/generation.py:139: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING:tensorflow:From ../envs/generation.py:164: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-09-30 15:07:52.546481: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-09-30 15:07:52.549822: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.911
+pciBusID: 0000:68:00.0
+2021-09-30 15:07:52.550767: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.0'; dlerror: libcudart.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 15:07:52.550995: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10.0'; dlerror: libcublas.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 15:07:52.551161: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcufft.so.10.0'; dlerror: libcufft.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 15:07:52.551260: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcurand.so.10.0'; dlerror: libcurand.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 15:07:52.551343: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcusolver.so.10.0'; dlerror: libcusolver.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 15:07:52.551406: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcusparse.so.10.0'; dlerror: libcusparse.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/lib:/opt/ohpc/pub/compiler/gcc/7.3.0/lib64
+2021-09-30 15:07:52.567153: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-09-30 15:07:52.567369: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-09-30 15:07:52.569225: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-09-30 15:07:52.581181: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3800000000 Hz
+2021-09-30 15:07:52.581683: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55d6640b6e00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-09-30 15:07:52.581807: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-09-30 15:07:52.590074: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55d6640b97a0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-09-30 15:07:52.590172: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): TITAN Xp, Compute Capability 6.1
+2021-09-30 15:07:52.590646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-09-30 15:07:52.590654: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      
+WARNING:tensorflow:From ../envs/generation.py:165: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+  -----------------------
+  | Rew/Mean | -0.0881  |
+  | SAR/Mean | 0.0599   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00248  |
+  | Rew/Best | -0.0803  |
+  | SAR/Best | 0.0546   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00314  |
+  | Time     | 12.2     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0902  |
+  | SAR/Mean | 0.0666   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00273  |
+  | Rew/Best | -0.0819  |
+  | SAR/Best | 0.0368   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00173  |
+  | Time     | 22.2     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0897  |
+  | SAR/Mean | 0.0685   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00299  |
+  | Rew/Best | -0.0806  |
+  | SAR/Best | 0.0259   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00181  |
+  | Time     | 32       |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0908  |
+  | SAR/Mean | 0.0712   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00296  |
+  | Rew/Best | -0.0838  |
+  | SAR/Best | 0.119    |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00393  |
+  | Time     | 43.1     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0897  |
+  | SAR/Mean | 0.0589   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00258  |
+  | Rew/Best | -0.0764  |
+  | SAR/Best | 0.0884   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.0031   |
+  | Time     | 51.1     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0887  |
+  | SAR/Mean | 0.0742   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00361  |
+  | Rew/Best | -0.0737  |
+  | SAR/Best | 0.102    |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00622  |
+  | Time     | 63.5     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0877  |
+  | SAR/Mean | 0.066    |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.0033   |
+  | Rew/Best | -0.0757  |
+  | SAR/Best | 0.0763   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00407  |
+  | Time     | 79.4     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0883  |
+  | SAR/Mean | 0.0668   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.0031   |
+  | Rew/Best | -0.0798  |
+  | SAR/Best | 0.0867   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00294  |
+  | Time     | 88.3     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0864  |
+  | SAR/Mean | 0.0734   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00334  |
+  | Rew/Best | -0.0728  |
+  | SAR/Best | 0.107    |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00407  |
+  | Time     | 96.5     |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0877  |
+  | SAR/Mean | 0.0612   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00325  |
+  | Rew/Best | -0.0795  |
+  | SAR/Best | 0.0711   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00249  |
+  | Time     | 103      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0833  |
+  | SAR/Mean | 0.0739   |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.00345  |
+  | Rew/Best | -0.0714  |
+  | SAR/Best | 0.0888   |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.00572  |
+  | Time     | 113      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0914  |
+  | SAR/Mean | 0.17     |
+  | Mz1/Mean | 2        |
+  | Mz2/Mean | 0.0107   |
+  | Rew/Best | -0.0719  |
+  | SAR/Best | 0.106    |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.0081   |
+  | Time     | 125      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.0694  |
+  | SAR/Mean | 0.664    |
+  | Mz1/Mean | 1.98     |
+  | Mz2/Mean | 0.0397   |
+  | Rew/Best | -0.045   |
+  | SAR/Best | 0.792    |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.0384   |
+  | Time     | 135      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.129   |
+  | SAR/Mean | 2.36     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.107    |
+  | Rew/Best | -0.0341  |
+  | SAR/Best | 1.77     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.0701   |
+  | Time     | 145      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.154   |
+  | SAR/Mean | 3.18     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.121    |
+  | Rew/Best | -0.032   |
+  | SAR/Best | 1.76     |
+  | Mz1/Best | 1.91     |
+  | Mz2/Best | 0.0902   |
+  | Time     | 156      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.121   |
+  | SAR/Mean | 2.87     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.132    |
+  | Rew/Best | -0.0271  |
+  | SAR/Best | 2.25     |
+  | Mz1/Best | 1.87     |
+  | Mz2/Best | 0.129    |
+  | Time     | 169      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.179   |
+  | SAR/Mean | 4.09     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.148    |
+  | Rew/Best | -0.0301  |
+  | SAR/Best | 1.41     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.0401   |
+  | Time     | 181      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.173   |
+  | SAR/Mean | 4.21     |
+  | Mz1/Mean | 1.83     |
+  | Mz2/Mean | 0.176    |
+  | Rew/Best | -0.0364  |
+  | SAR/Best | 2.74     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.119    |
+  | Time     | 194      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.221   |
+  | SAR/Mean | 5.44     |
+  | Mz1/Mean | 1.78     |
+  | Mz2/Mean | 0.221    |
+  | Rew/Best | -0.05    |
+  | SAR/Best | 1.41     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.0786   |
+  | Time     | 204      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.217   |
+  | SAR/Mean | 5.77     |
+  | Mz1/Mean | 1.81     |
+  | Mz2/Mean | 0.197    |
+  | Rew/Best | -0.0596  |
+  | SAR/Best | 3.14     |
+  | Mz1/Best | 1.85     |
+  | Mz2/Best | 0.149    |
+  | Time     | 216      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.233   |
+  | SAR/Mean | 6.21     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.223    |
+  | Rew/Best | -0.0773  |
+  | SAR/Best | 4.23     |
+  | Mz1/Best | 1.8      |
+  | Mz2/Best | 0.198    |
+  | Time     | 226      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.244   |
+  | SAR/Mean | 6.54     |
+  | Mz1/Mean | 1.77     |
+  | Mz2/Mean | 0.237    |
+  | Rew/Best | -0.0485  |
+  | SAR/Best | 3.41     |
+  | Mz1/Best | 1.81     |
+  | Mz2/Best | 0.191    |
+  | Time     | 237      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.31    |
+  | SAR/Mean | 9.06     |
+  | Mz1/Mean | 1.73     |
+  | Mz2/Mean | 0.279    |
+  | Rew/Best | -0.18    |
+  | SAR/Best | 7.67     |
+  | Mz1/Best | 1.77     |
+  | Mz2/Best | 0.231    |
+  | Time     | 249      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.3     |
+  | SAR/Mean | 10.6     |
+  | Mz1/Mean | 1.72     |
+  | Mz2/Mean | 0.291    |
+  | Rew/Best | -0.0753  |
+  | SAR/Best | 5.48     |
+  | Mz1/Best | 1.72     |
+  | Mz2/Best | 0.277    |
+  | Time     | 260      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.295   |
+  | SAR/Mean | 11.3     |
+  | Mz1/Mean | 1.71     |
+  | Mz2/Mean | 0.301    |
+  | Rew/Best | -0.119   |
+  | SAR/Best | 6.94     |
+  | Mz1/Best | 1.6      |
+  | Mz2/Best | 0.4      |
+  | Time     | 271      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.315   |
+  | SAR/Mean | 10.9     |
+  | Mz1/Mean | 1.71     |
+  | Mz2/Mean | 0.308    |
+  | Rew/Best | -0.244   |
+  | SAR/Best | 7.51     |
+  | Mz1/Best | 1.74     |
+  | Mz2/Best | 0.279    |
+  | Time     | 283      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.31    |
+  | SAR/Mean | 11.4     |
+  | Mz1/Mean | 1.72     |
+  | Mz2/Mean | 0.31     |
+  | Rew/Best | -0.224   |
+  | SAR/Best | 14.5     |
+  | Mz1/Best | 1.84     |
+  | Mz2/Best | 0.3      |
+  | Time     | 292      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.311   |
+  | SAR/Mean | 11.9     |
+  | Mz1/Mean | 1.72     |
+  | Mz2/Mean | 0.289    |
+  | Rew/Best | -0.25    |
+  | SAR/Best | 7.46     |
+  | Mz1/Best | 1.74     |
+  | Mz2/Best | 0.259    |
+  | Time     | 303      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.308   |
+  | SAR/Mean | 12.3     |
+  | Mz1/Mean | 1.73     |
+  | Mz2/Mean | 0.286    |
+  | Rew/Best | -0.242   |
+  | SAR/Best | 13.4     |
+  | Mz1/Best | 1.7      |
+  | Mz2/Best | 0.387    |
+  | Time     | 313      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.293   |
+  | SAR/Mean | 12.5     |
+  | Mz1/Mean | 1.73     |
+  | Mz2/Mean | 0.285    |
+  | Rew/Best | -0.202   |
+  | SAR/Best | 7.73     |
+  | Mz1/Best | 1.75     |
+  | Mz2/Best | 0.252    |
+  | Time     | 322      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.284   |
+  | SAR/Mean | 14.3     |
+  | Mz1/Mean | 1.74     |
+  | Mz2/Mean | 0.277    |
+  | Rew/Best | -0.219   |
+  | SAR/Best | 18       |
+  | Mz1/Best | 1.7      |
+  | Mz2/Best | 0.31     |
+  | Time     | 334      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.276   |
+  | SAR/Mean | 16       |
+  | Mz1/Mean | 1.75     |
+  | Mz2/Mean | 0.288    |
+  | Rew/Best | -0.174   |
+  | SAR/Best | 18.2     |
+  | Mz1/Best | 1.84     |
+  | Mz2/Best | 0.314    |
+  | Time     | 346      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.273   |
+  | SAR/Mean | 16       |
+  | Mz1/Mean | 1.76     |
+  | Mz2/Mean | 0.28     |
+  | Rew/Best | -0.15    |
+  | SAR/Best | 20.9     |
+  | Mz1/Best | 1.9      |
+  | Mz2/Best | 0.136    |
+  | Time     | 359      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.266   |
+  | SAR/Mean | 17.3     |
+  | Mz1/Mean | 1.74     |
+  | Mz2/Mean | 0.3      |
+  | Rew/Best | -0.183   |
+  | SAR/Best | 20.6     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.262    |
+  | Time     | 371      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.249   |
+  | SAR/Mean | 18.7     |
+  | Mz1/Mean | 1.74     |
+  | Mz2/Mean | 0.308    |
+  | Rew/Best | -0.147   |
+  | SAR/Best | 23.4     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.324    |
+  | Time     | 384      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.207   |
+  | SAR/Mean | 22.3     |
+  | Mz1/Mean | 1.81     |
+  | Mz2/Mean | 0.304    |
+  | Rew/Best | -0.137   |
+  | SAR/Best | 25.9     |
+  | Mz1/Best | 1.7      |
+  | Mz2/Best | 0.434    |
+  | Time     | 394      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.195   |
+  | SAR/Mean | 23.7     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.297    |
+  | Rew/Best | -0.134   |
+  | SAR/Best | 22.4     |
+  | Mz1/Best | 1.74     |
+  | Mz2/Best | 0.258    |
+  | Time     | 405      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.186   |
+  | SAR/Mean | 24.7     |
+  | Mz1/Mean | 1.79     |
+  | Mz2/Mean | 0.32     |
+  | Rew/Best | -0.135   |
+  | SAR/Best | 28.8     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.353    |
+  | Time     | 418      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.175   |
+  | SAR/Mean | 27       |
+  | Mz1/Mean | 1.84     |
+  | Mz2/Mean | 0.315    |
+  | Rew/Best | -0.137   |
+  | SAR/Best | 29.3     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.23     |
+  | Time     | 429      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.17    |
+  | SAR/Mean | 26.9     |
+  | Mz1/Mean | 1.84     |
+  | Mz2/Mean | 0.308    |
+  | Rew/Best | -0.13    |
+  | SAR/Best | 26       |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.179    |
+  | Time     | 440      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.169   |
+  | SAR/Mean | 30.8     |
+  | Mz1/Mean | 1.84     |
+  | Mz2/Mean | 0.332    |
+  | Rew/Best | -0.125   |
+  | SAR/Best | 28.7     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.263    |
+  | Time     | 453      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.179   |
+  | SAR/Mean | 35.4     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.377    |
+  | Rew/Best | -0.131   |
+  | SAR/Best | 31.1     |
+  | Mz1/Best | 1.87     |
+  | Mz2/Best | 0.197    |
+  | Time     | 463      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.182   |
+  | SAR/Mean | 36.2     |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.384    |
+  | Rew/Best | -0.114   |
+  | SAR/Best | 28.8     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.266    |
+  | Time     | 474      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.193   |
+  | SAR/Mean | 39       |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.435    |
+  | Rew/Best | -0.124   |
+  | SAR/Best | 32.9     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.35     |
+  | Time     | 485      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.228   |
+  | SAR/Mean | 43       |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.429    |
+  | Rew/Best | -0.14    |
+  | SAR/Best | 33.8     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.224    |
+  | Time     | 497      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.253   |
+  | SAR/Mean | 47       |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.483    |
+  | Rew/Best | -0.144   |
+  | SAR/Best | 29       |
+  | Mz1/Best | 1.81     |
+  | Mz2/Best | 0.298    |
+  | Time     | 507      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.161   |
+  | SAR/Mean | 24.6     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.278    |
+  | Rew/Best | -0.0915  |
+  | SAR/Best | 25.9     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.182    |
+  | Time     | 520      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.163   |
+  | SAR/Mean | 24.1     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.295    |
+  | Rew/Best | -0.123   |
+  | SAR/Best | 24.4     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.179    |
+  | Time     | 531      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.161   |
+  | SAR/Mean | 25.6     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.323    |
+  | Rew/Best | -0.128   |
+  | SAR/Best | 25.8     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.536    |
+  | Time     | 543      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.165   |
+  | SAR/Mean | 24.5     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.293    |
+  | Rew/Best | -0.111   |
+  | SAR/Best | 25.5     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.17     |
+  | Time     | 553      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.17    |
+  | SAR/Mean | 24       |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.266    |
+  | Rew/Best | -0.113   |
+  | SAR/Best | 27.4     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.178    |
+  | Time     | 565      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.154   |
+  | SAR/Mean | 25.9     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.289    |
+  | Rew/Best | -0.113   |
+  | SAR/Best | 25.4     |
+  | Mz1/Best | 1.9      |
+  | Mz2/Best | 0.213    |
+  | Time     | 578      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.158   |
+  | SAR/Mean | 25.1     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.297    |
+  | Rew/Best | -0.102   |
+  | SAR/Best | 27.6     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.336    |
+  | Time     | 588      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.167   |
+  | SAR/Mean | 26.2     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.293    |
+  | Rew/Best | -0.116   |
+  | SAR/Best | 25.8     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.268    |
+  | Time     | 603      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.163   |
+  | SAR/Mean | 25.6     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.274    |
+  | Rew/Best | -0.124   |
+  | SAR/Best | 27.6     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.202    |
+  | Time     | 614      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.169   |
+  | SAR/Mean | 26.6     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.306    |
+  | Rew/Best | -0.121   |
+  | SAR/Best | 31.1     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.262    |
+  | Time     | 626      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.153   |
+  | SAR/Mean | 29.1     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.308    |
+  | Rew/Best | -0.0996  |
+  | SAR/Best | 27.4     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.296    |
+  | Time     | 636      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.151   |
+  | SAR/Mean | 27.1     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.319    |
+  | Rew/Best | -0.104   |
+  | SAR/Best | 28.3     |
+  | Mz1/Best | 1.87     |
+  | Mz2/Best | 0.287    |
+  | Time     | 651      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.154   |
+  | SAR/Mean | 28.2     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.341    |
+  | Rew/Best | -0.104   |
+  | SAR/Best | 24.6     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.283    |
+  | Time     | 665      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.165   |
+  | SAR/Mean | 29.7     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.33     |
+  | Rew/Best | -0.127   |
+  | SAR/Best | 26       |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.321    |
+  | Time     | 677      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.152   |
+  | SAR/Mean | 28.9     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.32     |
+  | Rew/Best | -0.117   |
+  | SAR/Best | 30       |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.221    |
+  | Time     | 690      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.169   |
+  | SAR/Mean | 31.3     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.352    |
+  | Rew/Best | -0.133   |
+  | SAR/Best | 25.5     |
+  | Mz1/Best | 1.75     |
+  | Mz2/Best | 0.247    |
+  | Time     | 702      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.162   |
+  | SAR/Mean | 31.1     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.322    |
+  | Rew/Best | -0.125   |
+  | SAR/Best | 30.8     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.226    |
+  | Time     | 716      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.164   |
+  | SAR/Mean | 31       |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.35     |
+  | Rew/Best | -0.11    |
+  | SAR/Best | 29.8     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.153    |
+  | Time     | 725      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.169   |
+  | SAR/Mean | 31.7     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.343    |
+  | Rew/Best | -0.121   |
+  | SAR/Best | 26.7     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.277    |
+  | Time     | 736      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.17    |
+  | SAR/Mean | 34.7     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.363    |
+  | Rew/Best | -0.109   |
+  | SAR/Best | 31       |
+  | Mz1/Best | 1.78     |
+  | Mz2/Best | 0.273    |
+  | Time     | 748      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.219   |
+  | SAR/Mean | 40.3     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.393    |
+  | Rew/Best | -0.129   |
+  | SAR/Best | 27.1     |
+  | Mz1/Best | 1.78     |
+  | Mz2/Best | 0.26     |
+  | Time     | 760      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.194   |
+  | SAR/Mean | 38       |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.393    |
+  | Rew/Best | -0.123   |
+  | SAR/Best | 33       |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.6      |
+  | Time     | 771      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.205   |
+  | SAR/Mean | 39.3     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.389    |
+  | Rew/Best | -0.117   |
+  | SAR/Best | 32       |
+  | Mz1/Best | 1.81     |
+  | Mz2/Best | 0.462    |
+  | Time     | 783      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.217   |
+  | SAR/Mean | 40       |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.411    |
+  | Rew/Best | -0.123   |
+  | SAR/Best | 33.8     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.471    |
+  | Time     | 793      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.221   |
+  | SAR/Mean | 41       |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.435    |
+  | Rew/Best | -0.128   |
+  | SAR/Best | 32.6     |
+  | Mz1/Best | 1.86     |
+  | Mz2/Best | 0.376    |
+  | Time     | 807      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.232   |
+  | SAR/Mean | 42.8     |
+  | Mz1/Mean | 1.93     |
+  | Mz2/Mean | 0.403    |
+  | Rew/Best | -0.135   |
+  | SAR/Best | 35.8     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.279    |
+  | Time     | 817      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.245   |
+  | SAR/Mean | 46       |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.475    |
+  | Rew/Best | -0.122   |
+  | SAR/Best | 34.8     |
+  | Mz1/Best | 1.88     |
+  | Mz2/Best | 0.259    |
+  | Time     | 833      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.261   |
+  | SAR/Mean | 49.7     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.49     |
+  | Rew/Best | -0.149   |
+  | SAR/Best | 36.4     |
+  | Mz1/Best | 1.9      |
+  | Mz2/Best | 0.335    |
+  | Time     | 845      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.263   |
+  | SAR/Mean | 51.1     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.496    |
+  | Rew/Best | -0.136   |
+  | SAR/Best | 37.7     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.314    |
+  | Time     | 855      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.262   |
+  | SAR/Mean | 52.3     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.449    |
+  | Rew/Best | -0.135   |
+  | SAR/Best | 35.4     |
+  | Mz1/Best | 1.91     |
+  | Mz2/Best | 0.275    |
+  | Time     | 869      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.262   |
+  | SAR/Mean | 49.5     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.497    |
+  | Rew/Best | -0.157   |
+  | SAR/Best | 41.9     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.398    |
+  | Time     | 882      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.258   |
+  | SAR/Mean | 48       |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.499    |
+  | Rew/Best | -0.156   |
+  | SAR/Best | 38.5     |
+  | Mz1/Best | 1.89     |
+  | Mz2/Best | 0.43     |
+  | Time     | 895      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.243   |
+  | SAR/Mean | 49.1     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.484    |
+  | Rew/Best | -0.125   |
+  | SAR/Best | 35.9     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.231    |
+  | Time     | 908      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.242   |
+  | SAR/Mean | 48.3     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.479    |
+  | Rew/Best | -0.134   |
+  | SAR/Best | 31.6     |
+  | Mz1/Best | 1.89     |
+  | Mz2/Best | 0.254    |
+  | Time     | 922      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.275   |
+  | SAR/Mean | 54       |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.531    |
+  | Rew/Best | -0.204   |
+  | SAR/Best | 67.9     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.524    |
+  | Time     | 932      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.22    |
+  | SAR/Mean | 79.4     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.749    |
+  | Rew/Best | -0.162   |
+  | SAR/Best | 74.7     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.848    |
+  | Time     | 943      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.267   |
+  | SAR/Mean | 81.9     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.77     |
+  | Rew/Best | -0.217   |
+  | SAR/Best | 71.5     |
+  | Mz1/Best | 1.91     |
+  | Mz2/Best | 0.674    |
+  | Time     | 953      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.273   |
+  | SAR/Mean | 82.7     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.797    |
+  | Rew/Best | -0.169   |
+  | SAR/Best | 76.8     |
+  | Mz1/Best | 1.75     |
+  | Mz2/Best | 0.573    |
+  | Time     | 965      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.28    |
+  | SAR/Mean | 81.4     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.714    |
+  | Rew/Best | -0.216   |
+  | SAR/Best | 88.8     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.625    |
+  | Time     | 976      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.277   |
+  | SAR/Mean | 83.6     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.816    |
+  | Rew/Best | -0.204   |
+  | SAR/Best | 79.1     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.459    |
+  | Time     | 990      |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.269   |
+  | SAR/Mean | 85.8     |
+  | Mz1/Mean | 1.93     |
+  | Mz2/Mean | 0.747    |
+  | Rew/Best | -0.194   |
+  | SAR/Best | 88.2     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.51     |
+  | Time     | 1e+03    |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.275   |
+  | SAR/Mean | 84.6     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.754    |
+  | Rew/Best | -0.19    |
+  | SAR/Best | 88.2     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.532    |
+  | Time     | 1.02e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.28    |
+  | SAR/Mean | 84.4     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.809    |
+  | Rew/Best | -0.197   |
+  | SAR/Best | 89.7     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.65     |
+  | Time     | 1.03e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.281   |
+  | SAR/Mean | 84.5     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.699    |
+  | Rew/Best | -0.21    |
+  | SAR/Best | 86.4     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.614    |
+  | Time     | 1.04e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.277   |
+  | SAR/Mean | 84.3     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.765    |
+  | Rew/Best | -0.223   |
+  | SAR/Best | 86.5     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.759    |
+  | Time     | 1.06e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.285   |
+  | SAR/Mean | 84.4     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.806    |
+  | Rew/Best | -0.222   |
+  | SAR/Best | 83.3     |
+  | Mz1/Best | 1.9      |
+  | Mz2/Best | 0.619    |
+  | Time     | 1.07e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.28    |
+  | SAR/Mean | 85       |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.797    |
+  | Rew/Best | -0.173   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.671    |
+  | Time     | 1.09e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.273   |
+  | SAR/Mean | 84.3     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.728    |
+  | Rew/Best | -0.188   |
+  | SAR/Best | 93       |
+  | Mz1/Best | 1.9      |
+  | Mz2/Best | 0.457    |
+  | Time     | 1.1e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.29    |
+  | SAR/Mean | 83.9     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.734    |
+  | Rew/Best | -0.212   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.528    |
+  | Time     | 1.11e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.288   |
+  | SAR/Mean | 84.8     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.755    |
+  | Rew/Best | -0.193   |
+  | SAR/Best | 92.1     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.721    |
+  | Time     | 1.12e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.277   |
+  | SAR/Mean | 85.4     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.742    |
+  | Rew/Best | -0.19    |
+  | SAR/Best | 91.6     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.724    |
+  | Time     | 1.14e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.281   |
+  | SAR/Mean | 85.2     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.796    |
+  | Rew/Best | -0.187   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.771    |
+  | Time     | 1.15e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.287   |
+  | SAR/Mean | 84.2     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.816    |
+  | Rew/Best | -0.184   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.877    |
+  | Time     | 1.17e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.271   |
+  | SAR/Mean | 86.4     |
+  | Mz1/Mean | 1.93     |
+  | Mz2/Mean | 0.723    |
+  | Rew/Best | -0.183   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.618    |
+  | Time     | 1.18e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.276   |
+  | SAR/Mean | 83.7     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.76     |
+  | Rew/Best | -0.184   |
+  | SAR/Best | 89.7     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.556    |
+  | Time     | 1.19e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.28    |
+  | SAR/Mean | 84.9     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.706    |
+  | Rew/Best | -0.171   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.679    |
+  | Time     | 1.2e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.284   |
+  | SAR/Mean | 85.8     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.81     |
+  | Rew/Best | -0.209   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.692    |
+  | Time     | 1.22e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.277   |
+  | SAR/Mean | 86.4     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.788    |
+  | Rew/Best | -0.218   |
+  | SAR/Best | 86.5     |
+  | Mz1/Best | 1.89     |
+  | Mz2/Best | 0.777    |
+  | Time     | 1.23e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.279   |
+  | SAR/Mean | 84.5     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.78     |
+  | Rew/Best | -0.16    |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.91     |
+  | Mz2/Best | 0.634    |
+  | Time     | 1.24e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.268   |
+  | SAR/Mean | 86.7     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.79     |
+  | Rew/Best | -0.163   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.607    |
+  | Time     | 1.25e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.286   |
+  | SAR/Mean | 85.9     |
+  | Mz1/Mean | 1.95     |
+  | Mz2/Mean | 0.767    |
+  | Rew/Best | -0.176   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.828    |
+  | Time     | 1.27e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.275   |
+  | SAR/Mean | 85.7     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.756    |
+  | Rew/Best | -0.197   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.637    |
+  | Time     | 1.28e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.278   |
+  | SAR/Mean | 85       |
+  | Mz1/Mean | 1.93     |
+  | Mz2/Mean | 0.757    |
+  | Rew/Best | -0.195   |
+  | SAR/Best | 93.5     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.719    |
+  | Time     | 1.29e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.267   |
+  | SAR/Mean | 85.3     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.79     |
+  | Rew/Best | -0.19    |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.671    |
+  | Time     | 1.31e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.272   |
+  | SAR/Mean | 86.3     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.765    |
+  | Rew/Best | -0.176   |
+  | SAR/Best | 89.7     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.744    |
+  | Time     | 1.32e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.26    |
+  | SAR/Mean | 87       |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.752    |
+  | Rew/Best | -0.174   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.851    |
+  | Time     | 1.33e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.266   |
+  | SAR/Mean | 87.5     |
+  | Mz1/Mean | 1.94     |
+  | Mz2/Mean | 0.838    |
+  | Rew/Best | -0.168   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.726    |
+  | Time     | 1.35e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.283   |
+  | SAR/Mean | 87.5     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.787    |
+  | Rew/Best | -0.204   |
+  | SAR/Best | 93.1     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.474    |
+  | Time     | 1.36e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.266   |
+  | SAR/Mean | 86.5     |
+  | Mz1/Mean | 1.94     |
+  | Mz2/Mean | 0.768    |
+  | Rew/Best | -0.204   |
+  | SAR/Best | 86.5     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.44     |
+  | Time     | 1.37e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.26    |
+  | SAR/Mean | 87.7     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.751    |
+  | Rew/Best | -0.204   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.52     |
+  | Time     | 1.38e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.258   |
+  | SAR/Mean | 87.4     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.777    |
+  | Rew/Best | -0.162   |
+  | SAR/Best | 89.7     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.542    |
+  | Time     | 1.39e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.255   |
+  | SAR/Mean | 87.4     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.859    |
+  | Rew/Best | -0.178   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.95     |
+  | Mz2/Best | 0.682    |
+  | Time     | 1.4e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.264   |
+  | SAR/Mean | 86.2     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.817    |
+  | Rew/Best | -0.184   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.653    |
+  | Time     | 1.42e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.262   |
+  | SAR/Mean | 88       |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.767    |
+  | Rew/Best | -0.206   |
+  | SAR/Best | 92.8     |
+  | Mz1/Best | 1.9      |
+  | Mz2/Best | 0.974    |
+  | Time     | 1.43e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.256   |
+  | SAR/Mean | 87       |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.702    |
+  | Rew/Best | -0.155   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.97     |
+  | Mz2/Best | 0.52     |
+  | Time     | 1.45e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.253   |
+  | SAR/Mean | 86.5     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.74     |
+  | Rew/Best | -0.164   |
+  | SAR/Best | 89.7     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.449    |
+  | Time     | 1.46e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.25    |
+  | SAR/Mean | 88.2     |
+  | Mz1/Mean | 1.93     |
+  | Mz2/Mean | 0.752    |
+  | Rew/Best | -0.157   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.599    |
+  | Time     | 1.48e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.265   |
+  | SAR/Mean | 86.5     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.705    |
+  | Rew/Best | -0.182   |
+  | SAR/Best | 76.9     |
+  | Mz1/Best | 1.67     |
+  | Mz2/Best | 0.64     |
+  | Time     | 1.49e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.264   |
+  | SAR/Mean | 88.1     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.812    |
+  | Rew/Best | -0.17    |
+  | SAR/Best | 78.9     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.911    |
+  | Time     | 1.5e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.256   |
+  | SAR/Mean | 87.9     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.8      |
+  | Rew/Best | -0.189   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 1.9      |
+  | Mz2/Best | 0.668    |
+  | Time     | 1.52e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.258   |
+  | SAR/Mean | 85.6     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.79     |
+  | Rew/Best | -0.201   |
+  | SAR/Best | 92.9     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.99     |
+  | Time     | 1.53e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.265   |
+  | SAR/Mean | 88.6     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.707    |
+  | Rew/Best | -0.203   |
+  | SAR/Best | 80       |
+  | Mz1/Best | 1.83     |
+  | Mz2/Best | 1.1      |
+  | Time     | 1.54e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.257   |
+  | SAR/Mean | 85.6     |
+  | Mz1/Mean | 1.83     |
+  | Mz2/Mean | 0.808    |
+  | Rew/Best | -0.197   |
+  | SAR/Best | 76.9     |
+  | Mz1/Best | 1.61     |
+  | Mz2/Best | 0.732    |
+  | Time     | 1.56e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.26    |
+  | SAR/Mean | 87.4     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.807    |
+  | Rew/Best | -0.204   |
+  | SAR/Best | 68.9     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.56     |
+  | Time     | 1.57e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.26    |
+  | SAR/Mean | 87.3     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.771    |
+  | Rew/Best | -0.175   |
+  | SAR/Best | 77       |
+  | Mz1/Best | 1.89     |
+  | Mz2/Best | 0.903    |
+  | Time     | 1.58e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.278   |
+  | SAR/Mean | 88.8     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.76     |
+  | Rew/Best | -0.203   |
+  | SAR/Best | 80.5     |
+  | Mz1/Best | 1.84     |
+  | Mz2/Best | 0.778    |
+  | Time     | 1.6e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.263   |
+  | SAR/Mean | 87.8     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.818    |
+  | Rew/Best | -0.171   |
+  | SAR/Best | 70.5     |
+  | Mz1/Best | 1.91     |
+  | Mz2/Best | 0.759    |
+  | Time     | 1.61e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.266   |
+  | SAR/Mean | 87.2     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.835    |
+  | Rew/Best | -0.181   |
+  | SAR/Best | 74.3     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 1.17     |
+  | Time     | 1.63e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.264   |
+  | SAR/Mean | 88       |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.818    |
+  | Rew/Best | -0.198   |
+  | SAR/Best | 80.1     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 1.18     |
+  | Time     | 1.64e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.267   |
+  | SAR/Mean | 87.6     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.799    |
+  | Rew/Best | -0.192   |
+  | SAR/Best | 77       |
+  | Mz1/Best | 1.92     |
+  | Mz2/Best | 0.851    |
+  | Time     | 1.66e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.255   |
+  | SAR/Mean | 85.4     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.744    |
+  | Rew/Best | -0.168   |
+  | SAR/Best | 76.9     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.67     |
+  | Time     | 1.67e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.261   |
+  | SAR/Mean | 87.7     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.893    |
+  | Rew/Best | -0.162   |
+  | SAR/Best | 70.6     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.521    |
+  | Time     | 1.68e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.266   |
+  | SAR/Mean | 88       |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.859    |
+  | Rew/Best | -0.202   |
+  | SAR/Best | 80.1     |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.679    |
+  | Time     | 1.7e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.266   |
+  | SAR/Mean | 87.8     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.806    |
+  | Rew/Best | -0.174   |
+  | SAR/Best | 80       |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 1.27     |
+  | Time     | 1.71e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.269   |
+  | SAR/Mean | 88.1     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.775    |
+  | Rew/Best | -0.168   |
+  | SAR/Best | 67.3     |
+  | Mz1/Best | 1.87     |
+  | Mz2/Best | 0.632    |
+  | Time     | 1.72e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.269   |
+  | SAR/Mean | 87.1     |
+  | Mz1/Mean | 1.93     |
+  | Mz2/Mean | 0.775    |
+  | Rew/Best | -0.184   |
+  | SAR/Best | 76.9     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.602    |
+  | Time     | 1.74e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.261   |
+  | SAR/Mean | 88       |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.855    |
+  | Rew/Best | -0.176   |
+  | SAR/Best | 73.8     |
+  | Mz1/Best | 1.96     |
+  | Mz2/Best | 0.739    |
+  | Time     | 1.75e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.259   |
+  | SAR/Mean | 86.4     |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.788    |
+  | Rew/Best | -0.188   |
+  | SAR/Best | 78.2     |
+  | Mz1/Best | 1.87     |
+  | Mz2/Best | 0.765    |
+  | Time     | 1.76e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.277   |
+  | SAR/Mean | 88.5     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.804    |
+  | Rew/Best | -0.216   |
+  | SAR/Best | 81       |
+  | Mz1/Best | 2        |
+  | Mz2/Best | 0.548    |
+  | Time     | 1.78e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.263   |
+  | SAR/Mean | 87.9     |
+  | Mz1/Mean | 1.92     |
+  | Mz2/Mean | 0.776    |
+  | Rew/Best | -0.176   |
+  | SAR/Best | 89.7     |
+  | Mz1/Best | 1.99     |
+  | Mz2/Best | 0.482    |
+  | Time     | 1.79e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.267   |
+  | SAR/Mean | 86       |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.831    |
+  | Rew/Best | -0.157   |
+  | SAR/Best | 73.7     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 0.778    |
+  | Time     | 1.8e+03  |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.252   |
+  | SAR/Mean | 86       |
+  | Mz1/Mean | 1.91     |
+  | Mz2/Mean | 0.741    |
+  | Rew/Best | -0.176   |
+  | SAR/Best | 74.5     |
+  | Mz1/Best | 1.76     |
+  | Mz2/Best | 0.672    |
+  | Time     | 1.82e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.268   |
+  | SAR/Mean | 87.4     |
+  | Mz1/Mean | 1.87     |
+  | Mz2/Mean | 0.817    |
+  | Rew/Best | -0.193   |
+  | SAR/Best | 80.3     |
+  | Mz1/Best | 1.82     |
+  | Mz2/Best | 1.1      |
+  | Time     | 1.83e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.266   |
+  | SAR/Mean | 87.9     |
+  | Mz1/Mean | 1.9      |
+  | Mz2/Mean | 0.746    |
+  | Rew/Best | -0.159   |
+  | SAR/Best | 73.7     |
+  | Mz1/Best | 1.82     |
+  | Mz2/Best | 0.479    |
+  | Time     | 1.84e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.253   |
+  | SAR/Mean | 85.2     |
+  | Mz1/Mean | 1.89     |
+  | Mz2/Mean | 0.805    |
+  | Rew/Best | -0.146   |
+  | SAR/Best | 70.6     |
+  | Mz1/Best | 1.93     |
+  | Mz2/Best | 0.75     |
+  | Time     | 1.85e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.27    |
+  | SAR/Mean | 87.3     |
+  | Mz1/Mean | 1.85     |
+  | Mz2/Mean | 0.808    |
+  | Rew/Best | -0.163   |
+  | SAR/Best | 76.9     |
+  | Mz1/Best | 1.98     |
+  | Mz2/Best | 0.864    |
+  | Time     | 1.86e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.277   |
+  | SAR/Mean | 87.1     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.83     |
+  | Rew/Best | -0.169   |
+  | SAR/Best | 76.9     |
+  | Mz1/Best | 1.94     |
+  | Mz2/Best | 1.04     |
+  | Time     | 1.87e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.266   |
+  | SAR/Mean | 86.7     |
+  | Mz1/Mean | 1.84     |
+  | Mz2/Mean | 0.814    |
+  | Rew/Best | -0.195   |
+  | SAR/Best | 77.3     |
+  | Mz1/Best | 1.53     |
+  | Mz2/Best | 0.775    |
+  | Time     | 1.88e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.272   |
+  | SAR/Mean | 88.3     |
+  | Mz1/Mean | 1.88     |
+  | Mz2/Mean | 0.77     |
+  | Rew/Best | -0.201   |
+  | SAR/Best | 76.8     |
+  | Mz1/Best | 1.46     |
+  | Mz2/Best | 0.947    |
+  | Time     | 1.89e+03 |
+  -----------------------
+  -----------------------
+  | Rew/Mean | -0.275   |
+  | SAR/Mean | 87.1     |
+  | Mz1/Mean | 1.86     |
+  | Mz2/Mean | 0.86     |
+  | Rew/Best | -0.218   |
+  | SAR/Best | 76.8     |
+  | Mz1/Best | 1.87     |
+  | Mz2/Best | 0.906    |
+  | Time     | 1.9e+03  |
+  -----------------------
+time is <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2021-09-30 15:39:39.678530

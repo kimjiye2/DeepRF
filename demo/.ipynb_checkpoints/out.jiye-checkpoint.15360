@@ -1,0 +1,9 @@
+[AINV|INFO] 2021-09-30 14:50:12,205 > [37mGradient ascent for env 'Exc-v2'[0m
+[AINV|ERROR] 2021-09-30 14:50:13,762 > [31mNameError: name 'b1_' is not defined[0m
+[AINV|DEBUG] 2021-09-30 14:50:13,763 > [36mTraceback (most recent call last):
+  File "../envs/refinement.py", line 221, in <module>
+    main(args)
+  File "../envs/refinement.py", line 91, in main
+    Mt, rews, done = env.step(b1_[..., t])
+NameError: name 'b1_' is not defined
+[0m
