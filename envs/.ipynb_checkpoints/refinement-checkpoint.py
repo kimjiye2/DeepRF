@@ -58,7 +58,7 @@ def main(args):
 
     # Create input vectors
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    preset = loadmat('../data/conv_rf/SLR_inv_env.mat')
+    preset = loadmat('../data/conv_rf/SLR_exc.mat')
     ref_pulse = torch.unsqueeze(torch.from_numpy(np.array(preset['result'], dtype=np.float32)), dim=0).to(device)
 
     if args.preset is None:
@@ -102,14 +102,15 @@ def main(args):
         scheduler.step(loss)
 
         # Update statistics
-        diff = torch.mean(torch.square(Mt[1:, :1000, 0, 1] - Mt[0, :1000, 0, 1]), dim=1)
-        difff = torch.mean(torch.square(Mt[1:, :, 0, 1] - Mt[0, :, 0, 1]), dim=1)
-        mxy_ref = torch.sqrt(Mt[0, :, 0, 0] ** 2 + Mt[0, :, 0, 1] ** 2).detach().cpu().numpy()
-        mxy = torch.sqrt(Mt[1:, :, 0, 0] ** 2 + Mt[1:, :, 0, 1] ** 2).detach().cpu().numpy()
+        diff = torch.mean(torch.square(Mt[1:, :args.pb, 0, 1] - Mt[0, :args.pb, 0, 1])+torch.square(Mt[1:, :args.pb, 0, 0] - Mt[0, :args.pb, 0, 0]), dim=1)
+        difff = torch.mean(torch.square(Mt[1:, :, 0, 1] - Mt[0, :, 0, 1]) + torch.square(Mt[1:,:,0,0] - Mt[0,:,0,0]), dim=1)
+        mxy_ref = torch.sqrt(Mt[0,:,0,1]**2 + Mt[0,:,0,0] **2).detach().cpu().numpy()
+        mxy = torch.sqrt(Mt[:, :, 0, 1] **2 + Mt[:, :, 0, 0]**2).detach().cpu().numpy()
         pb = torch.sqrt(torch.sum(Mt[1:, :1000, 0, 0], dim=1) ** 2 + torch.sum(Mt[1:, :1000, 0, 1], dim=1) ** 2)
         ripple = torch.max(torch.sqrt(Mt[1:, 1000:, 0, 0] ** 2 + Mt[1:, 1000:, 0, 1] ** 2), dim=1)[0]
         amp = ((b1[:, 0, :] + 1.0) * env.max_amp * 1e4 / 2).pow(2).sum(-1)
         sar = amp * env.du / len(env) * 1e6
+        
 
         idx1 = 0
         idx2 = 0
@@ -178,10 +179,10 @@ def main(args):
 
             # Excitation (magnitude) profile
             profile = plt.figure(1)
-            plt.plot(np.concatenate((env.df[1000:1000 + 1500], env.df[:1000], env.df[1000 + 1500:1000 + 3000])),
-                     np.concatenate((mxy[idx3, 1000:1000 + 1500], mxy[idx3, :1000], mxy[idx3, 1000 + 1500:1000 + 3000])), 'b')
-            plt.plot(np.concatenate((env.df[1000:1000 + 1500], env.df[:1000], env.df[1000 + 1500:1000 + 3000])),
-                     np.concatenate((mxy_ref[1000:1000 + 1500], mxy_ref[:1000], mxy_ref[1000 + 1500:1000 + 3000])), 'r')
+            plt.plot(np.concatenate((env.df[args.pb:args.pb + args.sb], env.df[:args.pb], env.df[args.pb + args.sb:args.pb + 2*args.sb])),
+                     np.concatenate((mxy[idx3, args.pb:args.pb + args.sb], mxy[idx3, :args.pb], mxy[idx3, args.pb + args.sb:args.pb + 2*args.sb])))
+            plt.plot(np.concatenate((env.df[args.pb:args.pb+ args.sb], env.df[:args.pb], env.df[args.pb + args.sb:args.pb + 2*args.sb])),
+                     np.concatenate((mxy_ref[args.pb:args.pb+ args.sb], mxy_ref[:args.pb], mxy_ref[args.pb + args.sb:args.pb + 2*args.sb])), 'r')
             logger.image_summary(profile, e + 1, 'profile')
 
             # RF pulse magnitude
@@ -214,8 +215,10 @@ if __name__ == '__main__':
         description="RF Pulse Design using Gradient Ascent"
     )
     parser.add_argument("--samples", type=int, default=4)
-    parser.add_argument("--episodes", type=int, default=int(5e4))
+    parser.add_argument("--episodes", type=int, default=int(1e4))
     parser.add_argument("--sampling_rate", type=int, default=256)
     parser.add_argument("--preset", type=str, default=None)
+    parser.add_argument("--pb", type=int, default=1400)
+    parser.add_argument("--sb", type=int, default=1400)
     args = parse_args(parser)
     main(args)

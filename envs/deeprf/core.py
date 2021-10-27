@@ -21,9 +21,9 @@ class SLRExcitation:
         assert len(b1_range) == 3, msg
         assert len(off_resonance_range) == 3, msg
 
-        pos1 = np.linspace(-1200, 1200, 201) / 42.5775 / 40 / 10
-        pos2 = np.linspace(-32000, -1630, 800) / 42.5775 / 40 / 10
-        pos3 = np.linspace(1630, 32000, 800) / 42.5775 / 40 / 10
+        pos1 = np.linspace(-2016, 2016, 126) / 42.5775 / 40 / 10
+        pos2 = np.linspace(-32000, -2016, 937) / 42.5775 / 40 / 10
+        pos3 = np.linspace(2016, 32000, 937) / 42.5775 / 40 / 10
 
         # Create simulator
         gamma = 42.5775 * 1e6  # (Hz/T)
@@ -90,6 +90,43 @@ class SLRExcitation:
             Mt, _ = self.simulator.step(torch.zeros_like(B1).to(m), G.to(m))
 
         return Mt, done
+
+class DeepRFSLREXC_origin(gym.Env):
+    def __init__(self, **kwargs):
+        self.core = SLRExcitation(**kwargs)
+        self.input_shape = self.core.input_shape
+        self.action_space = self.core.action_space
+        self.du = self.core.du
+        self.max_amp = self.core.max_amp
+        self.df = self.core.df
+        self.sar_coef = kwargs.get('sar_coef', 0.0)
+        self.ripple_coef = kwargs.get('ripple_coef', 1.0)
+        self.max_mag = kwargs.get('max_mag', 0.9512)
+        self.max_ripple = kwargs.get('max_ripple', 0.01)
+
+
+    def __len__(self):
+        return self.core.sampling_rate
+
+    def reset(self):
+        return self.core.reset()
+
+    def step(self, actions):
+        m = actions[..., 0]
+        phi = actions[..., 1]
+        Mt, done = self.core.step(m, phi)
+        amp = ((torch.clamp(m, -1.0, 1.0) + 1.0) * self.core.max_amp * 1e+4 / 2).pow(2) * \
+              self.du / self.core.sampling_rate * 1e+6  # (mG)^2sec
+        rewards = -self.sar_coef * amp
+        if done:
+            Mx = Mt[:,0,:,0]
+            My = Mt[:,0,:,1]
+            refer_Mx = Mx[0,:]
+            refer_My = My[0,:]
+            error = torch.mean((Mx - refer_Mx).square() + (My-refer_My).square(),dim=1)
+            rewards = - self.ripple_coef * error
+        return Mt.permute(0, 2, 1, 3), rewards, done
+    
     
 class SLRInversion_origin:
     def __init__(
@@ -107,9 +144,15 @@ class SLRInversion_origin:
         assert len(b1_range) == 3, msg
         assert len(off_resonance_range) == 3, msg
 
-        pos1 = np.linspace(-836, 836, 1400) / 42.5775 / 40 / 10
-        pos2 = np.linspace(-8000, -836, 1400) / 42.5775 / 40 / 10
-        pos3 = np.linspace(836, 8000, 1400) / 42.5775 / 40 / 10
+#         pos1 = np.linspace(-836, 836, 1400) / 42.5775 / 40 / 10
+#         pos2 = np.linspace(-8000, -836, 1400) / 42.5775 / 40 / 10
+#         pos3 = np.linspace(836, 8000, 1400) / 42.5775 / 40 / 10
+#         pos1 = np.linspace(-840, 840, 210) / 42.5775 / 40 / 10
+#         pos2 = np.linspace(-8000, -840, 895) / 42.5775 / 40 / 10
+#         pos3 = np.linspace(840, 8000, 895) / 42.5775 / 40 / 10
+        pos1 = np.linspace(-840, 840, 660) / 42.5775 / 40 / 10
+        pos2 = np.linspace(-8000, -840, 670) / 42.5775 / 40 / 10
+        pos3 = np.linspace(840, 8000, 670) / 42.5775 / 40 / 10
 
         # Create simulator
         gamma = 42.5775 * 1e6  # (Hz/T)

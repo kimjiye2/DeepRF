@@ -71,7 +71,6 @@ def main(args):
         pulse = np.array(preset['result'], dtype=np.float32)
         m = torch.clamp(torch.FloatTensor(pulse[:args.samples, :, 0]), -1.0 + 1e-4, 1.0 - 1e-4)
         p = torch.FloatTensor(pulse[:args.samples, :, 1])
-
     m = nn.Parameter(torch.atanh(m).to(device))
     p = nn.Parameter(p.to(device))
 
@@ -80,7 +79,9 @@ def main(args):
     scheduler = ReduceLROnPlateau(optimizer)
     st = time.time()
     for e in range(args.episodes):
+        #b1 = torch.stack([torch.tanh(m), p], dim=1)
         b1 = torch.stack([torch.tanh(m), p], dim=1)
+        #b1 = torch.unsqueeze(b1, 0)
         b1_ = torch.cat((ref_pulse, b1), dim=0)
 
         # Simulation
@@ -102,7 +103,7 @@ def main(args):
         scheduler.step(loss)
 
         # Update statistics
-        diff = torch.mean(torch.square(Mt[1:, :args.pb, 0, 1] - Mt[0, :args.pb, 0, 1]), dim=1)
+        diff = torch.sum(torch.square(Mt[1:, :args.pb, 0, 2] - Mt[0, :args.pb, 0, 2]), dim=1)
         difff = torch.mean(torch.square(Mt[1:, :, 0, 1] - Mt[0, :, 0, 1]), dim=1)
         mz_ref = Mt[0, :, 0, 2].detach().cpu().numpy()
         mz = Mt[1:, :, 0, 2].detach().cpu().numpy()
@@ -173,7 +174,7 @@ def main(args):
         info.update('Step/Idx5', idx5)
 
         # Log summary statistics
-        if (e + 1) % args.log_step == 0:
+        if e % args.log_step == 0:
             logger.log('Summary statistics for episode {}'.format(e + 1))
 
             # Excitation (magnitude) profile
